@@ -164,7 +164,7 @@ namespace API.ITSProject_2.Controllers
             {
                 LocationDetailViewModels locationDetail;
                 Location location = _locationService.Find(id, _ => _.BusinessHours, _ => _.Reviews.Select(__ => __.Creator),
-                    _ => _.Reviews.Select(__ => __.Photos),
+                    _ => _.Reviews.Select(__ => __.Photos), _ => _.Reviews.Select(__ => __.Location),
                     _ => _.BusinessHours, _ => _.Tags, _ => _.Photos.Select(__ => __.Photo),
                     _ => _.Area);
 

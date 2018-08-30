@@ -47,7 +47,7 @@
 
         public IEnumerable<Report> GetAllReport()
         {
-            return _reportRepository.GetAllAsQueryable(_ => _.User, _ => _.Review.Creator, _ => _.Review.Photos).ToList();
+            return _reportRepository.GetAllAsQueryable(_ => _.User, _ => _.Review.Creator, _ => _.Review.Photos, _ => _.Review.Location).ToList();
         }
 
         public IEnumerable<ChangeRequest> GetAllChangeRequest()
