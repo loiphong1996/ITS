@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Phong\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_ITSSolution.1238059876.00" t="ExcludeRecursive" />
     <e p="D:\Project\ITS\New folder" t="IncludeFlat">
+      <e p="AddOns" t="Include" />
       <e p="API" t="Include" />
       <e p="API.ITSProject" t="IncludeRecursive">
         <e p="API.ITSProject.csproj" t="IncludeRecursive" />
@@ -436,5 +437,15 @@
         <e p="Service.Implement.csproj" t="IncludeRecursive" />
       </e>
     </e>
+    <e p="D:\source\repos\HoangKimSolution\Admin-HS345fffes\AddOns.Clone\AddOns.Clone.csproj" t="IncludeRecursive" />
+    <e p="D:\source\repos\HoangKimSolution\Admin-HS345fffes\AddOns.Mail\AddOns.Mail.csproj" t="IncludeRecursive" />
+    <e p="D:\source\repos\HoangKimSolution\Admin-HS345fffes\AddOns.Pagination\AddOns.Pagination.csproj" t="IncludeRecursive" />
+    <e p="D:\source\repos\HoangKimSolution\Admin-HS345fffes\Core.ApplicationService\Core.ApplicationService.csproj" t="IncludeRecursive" />
+    <e p="D:\source\repos\HoangKimSolution\Admin-HS345fffes\Core.ObjectModels\Core.ObjectModels.csproj" t="IncludeRecursive" />
+    <e p="D:\source\repos\HoangKimSolution\Admin-HS345fffes\Core.ObjectService\Core.ObjectService.csproj" t="IncludeRecursive" />
+    <e p="D:\source\repos\HoangKimSolution\Admin-HS345fffes\Infrastructure.Entity\Infrastructure.Entity.csproj" t="IncludeRecursive" />
+    <e p="D:\source\repos\HoangKimSolution\Admin-HS345fffes\Infrastructure.Identity\Infrastructure.Identity.csproj" t="IncludeRecursive" />
+    <e p="D:\source\repos\HoangKimSolution\Admin-HS345fffes\Infrastructure.Logging\Infrastructure.Logging.csproj" t="IncludeRecursive" />
+    <e p="D:\source\repos\HoangKimSolution\Admin-HS345fffes\Service.Implement\Service.Implement.csproj" t="IncludeRecursive" />
   </component>
 </project>

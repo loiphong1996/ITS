@@ -3,9 +3,14 @@
            title="Báo cáo bình luận"
            :status="status">
     <template slot="detail">
+      <v-flex class="text-xs-center subheading">
+        Cho <router-link :to="{name: 'LocationEdit', query:{id: review.locationId}}">{{review.locationName}}</router-link>
+      </v-flex>
       <v-layout column>
-        <v-flex ma-1 class="subheading">
-          {{message}}
+        <v-flex>
+          <v-textarea :value="content" label="Lời nhắn" readonly>
+
+          </v-textarea>
         </v-flex>
         <v-flex>
           <LocationReview v-bind="review"/>
@@ -34,7 +39,9 @@
       'location',
       'status',
       'review',
-      'message'
+      'content',
+      'locationId',
+      'locationName'
     ]
   }
 </script>

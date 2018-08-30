@@ -32,17 +32,17 @@
             <td>{{ props.item.phoneNumber }}</td>
             <td>{{ props.item.birthdate }}</td>
             <td>{{ props.item.address }}</td>
-            <td>
+            <!--<td>-->
 
-              <v-chip outline disabled label color="green"
-                      v-if="!props.item.ban">
-                Hoạt động
-              </v-chip>
-              <v-chip outline disabled label color="red"
-                      v-if="props.item.ban">
-                Khóa
-              </v-chip>
-            </td>
+              <!--<v-chip outline disabled label color="green"-->
+                      <!--v-if="!props.item.ban">-->
+                <!--Hoạt động-->
+              <!--</v-chip>-->
+              <!--<v-chip outline disabled label color="red"-->
+                      <!--v-if="props.item.ban">-->
+                <!--Khóa-->
+              <!--</v-chip>-->
+            <!--</td>-->
             <td class="justify-center layout px-0">
               <router-link :to="{name:'AccountEdit', query:{id:props.item.id}}">
                 <v-icon
@@ -93,7 +93,7 @@
           {text: 'Ngày sinh', value: 'birthdate'},
           {text: 'Địa chỉ', value: 'address'},
           {text: 'Khóa', value: 'ban'},
-          {text: 'Hành động', value: 'id', sortable: false},
+          // {text: 'Hành động', value: 'id', sortable: false},
         ],
         pagination: {},
         total: undefined,

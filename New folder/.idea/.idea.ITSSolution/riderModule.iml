@@ -2,6 +2,16 @@
 <module type="RIDER_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/../.." />
+    <content url="file://D:/source/repos/HoangKimSolution/Admin-HS345fffes/AddOns.Clone/AddOns.Clone.csproj" />
+    <content url="file://D:/source/repos/HoangKimSolution/Admin-HS345fffes/AddOns.Mail/AddOns.Mail.csproj" />
+    <content url="file://D:/source/repos/HoangKimSolution/Admin-HS345fffes/AddOns.Pagination/AddOns.Pagination.csproj" />
+    <content url="file://D:/source/repos/HoangKimSolution/Admin-HS345fffes/Core.ApplicationService/Core.ApplicationService.csproj" />
+    <content url="file://D:/source/repos/HoangKimSolution/Admin-HS345fffes/Core.ObjectModels/Core.ObjectModels.csproj" />
+    <content url="file://D:/source/repos/HoangKimSolution/Admin-HS345fffes/Core.ObjectService/Core.ObjectService.csproj" />
+    <content url="file://D:/source/repos/HoangKimSolution/Admin-HS345fffes/Infrastructure.Entity/Infrastructure.Entity.csproj" />
+    <content url="file://D:/source/repos/HoangKimSolution/Admin-HS345fffes/Infrastructure.Identity/Infrastructure.Identity.csproj" />
+    <content url="file://D:/source/repos/HoangKimSolution/Admin-HS345fffes/Infrastructure.Logging/Infrastructure.Logging.csproj" />
+    <content url="file://D:/source/repos/HoangKimSolution/Admin-HS345fffes/Service.Implement/Service.Implement.csproj" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

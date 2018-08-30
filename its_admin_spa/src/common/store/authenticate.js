@@ -4,8 +4,8 @@ import moment from "moment";
 import Raven from "raven-js"
 import firebase from "../firebase";
 
-const root = "https://itssolutiong9.azurewebsites.net/";
-// const root = "http://localhost:59728/";
+// const root = "https://itssolutiong9.azurewebsites.net/";
+const root = "http://localhost:59728/";
 
 const googleProvider = new firebase.auth.GoogleAuthProvider();
 const facebookProvider = new firebase.auth.FacebookAuthProvider();
