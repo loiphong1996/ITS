@@ -634,7 +634,8 @@
                 Id = review.Id,
                 Title = review.Title,
                 CreatorName = review.Creator.FullName,
-                Photos = review.Photos.Select(_ => _.Path)
+                Photos = review.Photos.Select(_ => _.Path),
+                LocationId = review.LocationId
             };
 
         public IEnumerable<CommentViewModels> ConvertToCommentViewModels(IEnumerable<Review> reviews)

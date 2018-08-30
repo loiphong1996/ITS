@@ -161,7 +161,7 @@
                 .Where(location => resultIds.Contains(location.Id));
 
             List<TreeViewModels> resultList = new List<TreeViewModels>();
-            foreach (Location location in locationsResult)
+            foreach (Location location in locationsResult.Where(_ => !_.IsDelete))
             {
                 var locationTags = location.Tags;
                 var commonTags = locationTags.Intersect(tags);

@@ -8,6 +8,9 @@
     public class CommentViewModels
     {
         [DataMember]
+        public int LocationId { get; set; }
+
+        [DataMember]
         public int Id { get; set; }
 
         [DataMember]
