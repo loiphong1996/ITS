@@ -132,19 +132,19 @@
             <v-divider></v-divider>
           </v-layout>
         </v-flex>
-        <v-flex my-2 mx-2>
-          <v-flex class="title">Khác</v-flex>
-          <v-layout column my-2>
-            <v-divider></v-divider>
-            <v-flex>
-              <v-btn block flat :to="{name:'LocationChangeRequest'}">
-                <v-icon>far fa-edit</v-icon>
-                &nbsp; &nbsp; Cải thiện hồ sơ
-              </v-btn>
-            </v-flex>
-            <v-divider></v-divider>
-          </v-layout>
-        </v-flex>
+        <!--<v-flex my-2 mx-2>-->
+          <!--<v-flex class="title">Khác</v-flex>-->
+          <!--<v-layout column my-2>-->
+            <!--<v-divider></v-divider>-->
+            <!--<v-flex>-->
+              <!--<v-btn block flat :to="{name:'LocationChangeRequest'}">-->
+                <!--<v-icon>far fa-edit</v-icon>-->
+                <!--&nbsp; &nbsp; Cải thiện hồ sơ-->
+              <!--</v-btn>-->
+            <!--</v-flex>-->
+            <!--<v-divider></v-divider>-->
+          <!--</v-layout>-->
+        <!--</v-flex>-->
 
         <v-flex style="height: 25vh">
           <!--Holder-->

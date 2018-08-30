@@ -18,22 +18,26 @@
         <v-flex>
           <v-layout column>
             <v-text-field label="Tên" PictureInput
+                          readonly
                           v-model="input.name"/>
             <v-text-field label="Email"
                           readonly
                           v-model="input.emailAddress"/>
             <v-text-field label="Điện thoại"
+                          readonly
                           v-model="input.phoneNumber"/>
             <v-text-field label="Địa chỉ"
+                          readonly
                           v-model="input.address"/>
             <v-text-field label="Ngày sinh"
                           type="date"
+                          readonly
                           v-model="input.birthdate"/>
           </v-layout>
         </v-flex>
         <v-flex>
-          <v-btn color="success">Cập nhật</v-btn>
-          <v-btn color="secondary" :loading="changePasswordLoading">Đổi mật khẩu</v-btn>
+          <!--<v-btn color="success">Cập nhật</v-btn>-->
+          <!--<v-btn color="secondary" :loading="changePasswordLoading">Đổi mật khẩu</v-btn>-->
           <v-btn color="secondary" @click="signout">Đăng xuất</v-btn>
         </v-flex>
         <v-flex style="height: 30vh">

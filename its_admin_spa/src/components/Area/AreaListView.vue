@@ -40,14 +40,14 @@
                   edit
                 </v-icon>
               </router-link>
-              <a>
-                <v-icon
-                  small
-                  color="red"
-                  @click="onDeleteClick(props.item)">
-                  delete
-                </v-icon>
-              </a>
+              <!--<a>-->
+                <!--<v-icon-->
+                  <!--small-->
+                  <!--color="red"-->
+                  <!--@click="onDeleteClick(props.item)">-->
+                  <!--delete-->
+                <!--</v-icon>-->
+              <!--</a>-->
             </td>
           </template>
         </v-data-table>

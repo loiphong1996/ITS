@@ -5,11 +5,11 @@
         <span class="title">Quản lí Yêu cầu</span>
         <v-layout row wrap>
           <v-progress-linear indeterminate v-if="pageLoading"/>
-          <v-flex pa-1 sm12 md8 lg6
-                  v-for="request in changeLocationRequests"
-                  :key="request.requestId">
-            <RequestChangeLocationInfo v-bind="request"/>
-          </v-flex>
+          <!--<v-flex pa-1 sm12 md8 lg6-->
+                  <!--v-for="request in changeLocationRequests"-->
+                  <!--:key="request.requestId">-->
+            <!--<RequestChangeLocationInfo v-bind="request"/>-->
+          <!--</v-flex>-->
           <v-flex pa-1 sm12 md8 lg6
           v-for="request in reportReviewRequests"
           :key="request.id">
@@ -88,7 +88,7 @@
     },
     computed: {
       pageLoading(){
-        return this.loading.changeRequests && this.loading.reportReviewRequests
+        return this.loading.reportReviewRequests
       },
       paginationModel() {
         const length = Math.ceil(this.total / this.pagination.rowsPerPage);
@@ -103,16 +103,16 @@
     },
     methods: {
       loadData() {
-        this.loading.changeRequests = true;
+        // this.loading.changeRequests = true;
         this.loading.reportReviewRequests = true;
 
-        this.$store.dispatch('request/getChangeLocationRequest')
-          .then(value => {
-            this.loading.changeRequests = false;
-            this.changeLocationRequests = value;
-          })
-          .catch(reason => {
-          });
+        // this.$store.dispatch('request/getChangeLocationRequest')
+        //   .then(value => {
+        //     this.loading.changeRequests = false;
+        //     this.changeLocationRequests = value;
+        //   })
+        //   .catch(reason => {
+        //   });
 
         this.$store.dispatch('request/getReportReviewRequests')
           .then(value => {
