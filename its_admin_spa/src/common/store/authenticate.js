@@ -2,31 +2,19 @@ import axiosInstance from "../util/axiosInstance";
 import RNMsgChannel from 'react-native-webview-messaging';
 import moment from "moment";
 import Raven from "raven-js"
-import firebase from "firebase";
+import firebase from "../firebase";
 
 const root = "https://itssolutiong9.azurewebsites.net/";
 // const root = "http://localhost:59728/";
 
-var config = {
-  apiKey: "AIzaSyCouzeKTc_xf3r7QJZjCjyEr7rceMB7rgA",
-  authDomain: "its-g8.firebaseapp.com",
-  databaseURL: "https://its-g8.firebaseio.com",
-  projectId: "its-g8",
-  storageBucket: "its-g8.appspot.com",
-  messagingSenderId: "917708153355"
-};
-firebase.initializeApp(config);
-
 const googleProvider = new firebase.auth.GoogleAuthProvider();
 const facebookProvider = new firebase.auth.FacebookAuthProvider();
-
 
 export default {
   namespaced: true,
   state: {
     facebookAppId: "266318357470729",
     token: undefined,
-    firebaseInstance: firebase
   },
   getters: {
     isLoggedIn(state) {
@@ -116,64 +104,12 @@ export default {
     },
     signinFacebook(context) {
       // post /RegisterExternal
-      return new Promise((resolve, reject) => {
-        firebase.auth().signInWithPopup(facebookProvider).then(function (result) {
-          // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-          var token = result.credential.accessToken;
-          // The signed-in user info.
-          var user = result.user;
-
-          let data = {
-              "email": user.email,
-              "photoUrl": user.photoUrl,
-              "displayName": user.displayName,
-              "uid": user.uid,
-            "provider": "Facebook",
-            "externalAccessToken": token
-          };
-
-          Raven.captureMessage("signinFacebook", {
-            extra: {
-              data,
-              user
-            }
-          });
-        }).catch(function (error) {
-          Raven.captureException(error);
-          reject();
-        });
-      })
+      firebase.auth().signInWithRedirect(facebookProvider);
     },
     signinGoogle(context) {
       // post /RegisterExternal
-      return new Promise((resolve, reject) => {
-        firebase.auth().signInWithPopup(googleProvider)
-          .then(function (result) {
-            // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-            var token = result.credential.accessToken;
-            var user = result.user;
+      firebase.auth().signInWithRedirect(googleProvider);
 
-            let data = {
-              "email": user.email,
-              "photoUrl": user.photoUrl,
-              "displayName": user.displayName,
-              "uid": user.uid,
-              "provider": "Google",
-              "externalAccessToken": token
-            };
-
-            Raven.captureMessage("signinGoogle", {
-              extra: {
-                data,
-                user
-              }
-            });
-          })
-          .catch(function (error) {
-            Raven.captureException(error);
-            reject();
-          })
-      })
     },
     setExternalLoginToken(context, payload) {
       const {

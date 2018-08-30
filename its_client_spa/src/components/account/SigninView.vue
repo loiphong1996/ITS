@@ -54,22 +54,22 @@
                 <v-flex xs12>
                   <v-divider class="my-2"/>
                 </v-flex>
-                <v-flex xs12 lg6 d-flex class="justify-center">
-                  <v-btn color="red" dark @click="signinGoogle"
-                  :loading="loading.googleBtn">
-                    <v-icon>fab fa-google</v-icon>
-                    &nbsp;&nbsp;
-                    Đăng nhập Google
-                  </v-btn>
-                </v-flex>
-                <v-flex xs12 lg6 d-flex class="justify-center">
-                  <v-btn color="primary" dark @click="signinFacebook"
-                         :loading="loading.facebookBtn">
-                    <v-icon>fab fa-facebook</v-icon>
-                    &nbsp;&nbsp;
-                    Đăng nhập Facebook
-                  </v-btn>
-                </v-flex>
+                <!--<v-flex xs12 lg6 d-flex class="justify-center">-->
+                  <!--<v-btn color="red" dark @click="signinGoogle"-->
+                  <!--:loading="loading.googleBtn">-->
+                    <!--<v-icon>fab fa-google</v-icon>-->
+                    <!--&nbsp;&nbsp;-->
+                    <!--Đăng nhập Google-->
+                  <!--</v-btn>-->
+                <!--</v-flex>-->
+                <!--<v-flex xs12 lg6 d-flex class="justify-center">-->
+                  <!--<v-btn color="primary" dark @click="signinFacebook"-->
+                         <!--:loading="loading.facebookBtn">-->
+                    <!--<v-icon>fab fa-facebook</v-icon>-->
+                    <!--&nbsp;&nbsp;-->
+                    <!--Đăng nhập Facebook-->
+                  <!--</v-btn>-->
+                <!--</v-flex>-->
               </v-layout>
             </v-flex>
           </v-layout>

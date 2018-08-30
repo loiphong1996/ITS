@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7270baf9-4c8b-47c4-9e26-08d97eeabdd3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ITSSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ITSSolution/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../its_client_spa/src/common/firebase/cors.json" beforeDir="false" afterPath="$PROJECT_DIR$/../its_client_spa/src/common/firebase/cors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../its_admin_spa/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../its_admin_spa/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../its_admin_spa/src/components/Account/AccountListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../its_admin_spa/src/components/Account/AccountListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../its_admin_spa/src/store/modules/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/../its_admin_spa/src/store/modules/account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../its_client_spa/src/common/input/LocationBusinessHoursInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../its_client_spa/src/common/input/LocationBusinessHoursInput.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../its_client_spa/src/common/input/TagCategoryInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../its_client_spa/src/common/input/TagCategoryInput.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../its_client_spa/src/common/store/authenticate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../its_client_spa/src/common/store/authenticate.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -172,8 +177,8 @@
       <file leaf-file-name="PlanService.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Service.Implement/Entity/PlanService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="279" lean-forward="true" selection-start-line="279" selection-end-line="279" />
+            <state relative-caret-position="182">
+              <caret line="271" column="45" lean-forward="true" selection-start-line="271" selection-start-column="45" selection-end-line="271" selection-end-column="45" />
               <folding>
                 <marker date="1535558683518" expanded="false" signature="6:260" ph="..." />
                 <marker date="1535558683518" expanded="true" signature="296:38552" ph="{...}" />
@@ -1130,7 +1135,7 @@
       <workItem from="1535525645096" duration="733000" />
       <workItem from="1535542165899" duration="2828000" />
       <workItem from="1535548097599" duration="484000" />
-      <workItem from="1535549654326" duration="14958000" />
+      <workItem from="1535549654326" duration="16879000" />
     </task>
     <task id="LOCAL-00001" summary="Fix some localized problem in clinet">
       <created>1534724273331</created>
@@ -1290,7 +1295,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145168000" />
+    <option name="totallyTimeSpent" value="147089000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1315,14 +1320,14 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49167928" weight="0.32467532" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32954547" />
       <window_info anchor="bottom" id="NuGet" order="7" weight="0.32784185" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49199083" visible="true" weight="0.31996974" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49188313" visible="true" weight="0.31996974" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="14" sideWeight="0.49924356" weight="0.3262987" />
       <window_info anchor="right" id="Database" order="4" weight="0.32753405" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3272727" />
-      <window_info id="Structure" order="1" sideWeight="0.50800914" side_tool="true" visible="true" weight="0.31996974" />
+      <window_info id="Structure" order="1" sideWeight="0.5081169" side_tool="true" visible="true" weight="0.31996974" />
       <window_info id="Favorites" order="2" sideWeight="0.5081169" side_tool="true" weight="0.17473525" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49319214" visible="true" weight="0.29058442" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49319214" weight="0.29058442" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -2124,8 +2129,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Service.Implement/Entity/PlanService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="279" lean-forward="true" selection-start-line="279" selection-end-line="279" />
+        <state relative-caret-position="182">
+          <caret line="271" column="45" lean-forward="true" selection-start-line="271" selection-start-column="45" selection-end-line="271" selection-end-column="45" />
           <folding>
             <marker date="1535558683518" expanded="false" signature="6:260" ph="..." />
             <marker date="1535558683518" expanded="true" signature="296:38552" ph="{...}" />

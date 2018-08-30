@@ -18,7 +18,7 @@
                 <span class="subheading">{{voteCount}} lượt bình chọn</span>
               </v-flex>
               <v-flex style="text-align: start" pt-1 pb-1>
-                <v-label>Kéo dài {{dayCount}} ngày</v-label>
+                <v-label>Kéo dài {{dayCount}} ngày bởi {{creatorName}}</v-label>
               </v-flex>
             </v-layout>
           </v-flex>
@@ -36,7 +36,8 @@
       'name',
       'photo',
       'time',
-      'voter'
+      'voter',
+      'creatorName'
     ],
     computed: {
       detailLink() {

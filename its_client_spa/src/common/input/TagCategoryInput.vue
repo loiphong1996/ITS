@@ -26,6 +26,14 @@
         selectedCategory: ''
       }
     },
+    watch:{
+      value:{
+        immediate: true,
+        handler(val){
+          this.selectedCategory = val;
+        }
+      }
+    },
     mounted() {
       this.selectedCategory = this.value;
     }
