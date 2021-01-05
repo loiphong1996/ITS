@@ -11,7 +11,7 @@
     "build": "node build/build.js&& firebase deploy"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
     "passport": "^0.4.0",
