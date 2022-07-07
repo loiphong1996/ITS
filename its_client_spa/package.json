@@ -14,7 +14,7 @@
     "axios": "^0.18.0",
     "firebase": "^5.4.1",
     "lodash": "^4.17.10",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "raven-js": "^3.26.4",
     "react-native-webview-messaging": "^1.2.3",
     "superagent": "^3.8.3",
